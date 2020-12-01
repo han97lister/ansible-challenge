@@ -4,7 +4,7 @@
 [manager:vars]
 ansible_user=hannahlistersims
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=~/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
 
 [workers]
 10.154.0.13
@@ -12,4 +12,4 @@ ansible_ssh_private_key_file=~/.ssh/id_rsa
 
 [workers:vars]
 ansible_ssh_common_args='-o StrictHostKeyChecking=no'
-ansible_ssh_private_key_file=/home/aboun/.ssh/id_rsa
+ansible_python_interpreter=/usr/bin/python3
