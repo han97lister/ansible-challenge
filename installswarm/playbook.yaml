@@ -10,4 +10,4 @@
   become: yes
   roles:
   - docker
-  - workers
+  - worker
