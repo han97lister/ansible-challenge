@@ -2,11 +2,12 @@
   become: yes
   roles:
   - common
-- hosts: ansible1
+- hosts: manager
   become: yes
   roles:
   - manager
 - hosts: workers
   become: yes
   roles:
-  - worker
+  - docker
+  - workers
