@@ -1,0 +1,15 @@
+[manager]
+10.154.0.15
+
+[manager:vars]
+ansible_user=hannahlistersims
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=~/.ssh/id_rsa
+
+[workers]
+10.154.0.13
+10.154.0.14
+
+[workers:vars]
+ansible_ssh_common_args='-o StrictHostKeyChecking=no'
+ansible_ssh_private_key_file=/home/aboun/.ssh/id_rsa
